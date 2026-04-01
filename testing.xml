@@ -1,0 +1,13 @@
+<suite name="DemoQA Suite">
+
+    <listeners>
+        <listener class-name="utils.TestListener"/>
+    </listeners>
+
+    <test name="All Tests">
+        <classes>
+            <class name="tests.DemoQATest"/>
+        </classes>
+    </test>
+
+</suite>

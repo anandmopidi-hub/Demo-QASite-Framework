@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-DemoQA_Suite" class="navigator-link">
+              <span class="suite-name border-failed">DemoQA Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-DemoQA_Suite" class="navigator-link ">
+                    <span>C:\Users\Anand_Mopidi\eclipse-workspace\Demoqa.com\testing.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-DemoQA_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-DemoQA_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-DemoQA_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-DemoQA_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-DemoQA_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-DemoQA_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods, 3 failed,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-DemoQA_Suite" class="hide-methods failed suite-DemoQA_Suite"> (hide)</a> <!-- hide-methods failed suite-DemoQA_Suite -->
+                      <a href="#" panel-name="suite-DemoQA_Suite" class="show-methods failed suite-DemoQA_Suite"> (show)</a> <!-- show-methods failed suite-DemoQA_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-DemoQA_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoQA_Suite" title="tests.DemoQATest" class="method navigator-link" hash-for-method="TC03_openCheckBox">TC03_openCheckBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoQA_Suite" title="tests.DemoQATest" class="method navigator-link" hash-for-method="TC04_selectDocuments">TC04_selectDocuments</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoQA_Suite" title="tests.DemoQATest" class="method navigator-link" hash-for-method="TC09_deleteUser">TC09_deleteUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-DemoQA_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-DemoQA_Suite" class="hide-methods passed suite-DemoQA_Suite"> (hide)</a> <!-- hide-methods passed suite-DemoQA_Suite -->
+                      <a href="#" panel-name="suite-DemoQA_Suite" class="show-methods passed suite-DemoQA_Suite"> (show)</a> <!-- show-methods passed suite-DemoQA_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-DemoQA_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoQA_Suite" title="tests.DemoQATest" class="method navigator-link" hash-for-method="TC01_openElements">TC01_openElements</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoQA_Suite" title="tests.DemoQATest" class="method navigator-link" hash-for-method="TC02_fillTextBox">TC02_fillTextBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoQA_Suite" title="tests.DemoQATest" class="method navigator-link" hash-for-method="TC05_radioButtonYes">TC05_radioButtonYes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoQA_Suite" title="tests.DemoQATest" class="method navigator-link" hash-for-method="TC06_openWebTable">TC06_openWebTable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoQA_Suite" title="tests.DemoQATest" class="method navigator-link" hash-for-method="TC07_addUser">TC07_addUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoQA_Suite" title="tests.DemoQATest" class="method navigator-link" hash-for-method="TC08_searchUser">TC08_searchUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoQA_Suite" title="tests.DemoQATest" class="method navigator-link" hash-for-method="TC10_openButtons">TC10_openButtons</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoQA_Suite" title="tests.DemoQATest" class="method navigator-link" hash-for-method="TC11_doubleClick">TC11_doubleClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoQA_Suite" title="tests.DemoQATest" class="method navigator-link" hash-for-method="TC12_rightClick">TC12_rightClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoQA_Suite" title="tests.DemoQATest" class="method navigator-link" hash-for-method="TC13_singleClick">TC13_singleClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoQA_Suite" title="tests.DemoQATest" class="method navigator-link" hash-for-method="TC14_openLinks">TC14_openLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoQA_Suite" title="tests.DemoQATest" class="method navigator-link" hash-for-method="TC15_simpleLink">TC15_simpleLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoQA_Suite" title="tests.DemoQATest" class="method navigator-link" hash-for-method="TC16_dynamicLink">TC16_dynamicLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoQA_Suite" title="tests.DemoQATest" class="method navigator-link" hash-for-method="TC17_createdLink">TC17_createdLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoQA_Suite" title="tests.DemoQATest" class="method navigator-link" hash-for-method="TC18_noContentLink">TC18_noContentLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoQA_Suite" title="tests.DemoQATest" class="method navigator-link" hash-for-method="TC19_movedLink">TC19_movedLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoQA_Suite" title="tests.DemoQATest" class="method navigator-link" hash-for-method="TC20_badRequest">TC20_badRequest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-DemoQA_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-DemoQA_Suite" class="panel DemoQA_Suite">
+          <div class="suite-DemoQA_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.DemoQATest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC03_openCheckBox">
+                  </a> <!-- TC03_openCheckBox -->
+                  <span class="method-name">TC03_openCheckBox</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[@title=&apos;Expand all&apos;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\ANAND_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58362}, goog:processID: 19312, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58362/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 15a120a218ba9f30dde7be7233b349cc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.WaitUtil.waitForElementClickable(WaitUtil.java:24)
+	at utils.ActionUtil.click(ActionUtil.java:12)
+	at pages.CheckBoxPage.selectCheckBox(CheckBoxPage.java:24)
+	at tests.DemoQATest.TC03_openCheckBox(DemoQATest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC04_selectDocuments">
+                  </a> <!-- TC04_selectDocuments -->
+                  <span class="method-name">TC04_selectDocuments</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[@title=&apos;Expand all&apos;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\ANAND_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58362}, goog:processID: 19312, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58362/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 15a120a218ba9f30dde7be7233b349cc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.WaitUtil.waitForElementClickable(WaitUtil.java:24)
+	at utils.ActionUtil.click(ActionUtil.java:12)
+	at pages.CheckBoxPage.selectCheckBox(CheckBoxPage.java:24)
+	at tests.DemoQATest.TC04_selectDocuments(DemoQATest.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC09_deleteUser">
+                  </a> <!-- TC09_deleteUser -->
+                  <span class="method-name">TC09_deleteUser</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[.//div[text()=&apos;Anand&apos;]]//span[@title=&apos;Delete&apos;]&quot;}
+  (Session info: chrome=146.0.7680.165)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [15a120a218ba9f30dde7be7233b349cc, findElement {using=xpath, value=//div[.//div[text()=&apos;Anand&apos;]]//span[@title=&apos;Delete&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\ANAND_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58362}, goog:processID: 19312, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58362/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 15a120a218ba9f30dde7be7233b349cc
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at tests.DemoQATest.TC09_deleteUser(DemoQATest.java:89)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DemoQA_Suite-class-failed -->
+          <div class="suite-DemoQA_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.DemoQATest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC01_openElements">
+                  </a> <!-- TC01_openElements -->
+                  <span class="method-name">TC01_openElements</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC02_fillTextBox">
+                  </a> <!-- TC02_fillTextBox -->
+                  <span class="method-name">TC02_fillTextBox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC05_radioButtonYes">
+                  </a> <!-- TC05_radioButtonYes -->
+                  <span class="method-name">TC05_radioButtonYes</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC06_openWebTable">
+                  </a> <!-- TC06_openWebTable -->
+                  <span class="method-name">TC06_openWebTable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC07_addUser">
+                  </a> <!-- TC07_addUser -->
+                  <span class="method-name">TC07_addUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC08_searchUser">
+                  </a> <!-- TC08_searchUser -->
+                  <span class="method-name">TC08_searchUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC10_openButtons">
+                  </a> <!-- TC10_openButtons -->
+                  <span class="method-name">TC10_openButtons</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC11_doubleClick">
+                  </a> <!-- TC11_doubleClick -->
+                  <span class="method-name">TC11_doubleClick</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC12_rightClick">
+                  </a> <!-- TC12_rightClick -->
+                  <span class="method-name">TC12_rightClick</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC13_singleClick">
+                  </a> <!-- TC13_singleClick -->
+                  <span class="method-name">TC13_singleClick</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC14_openLinks">
+                  </a> <!-- TC14_openLinks -->
+                  <span class="method-name">TC14_openLinks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC15_simpleLink">
+                  </a> <!-- TC15_simpleLink -->
+                  <span class="method-name">TC15_simpleLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC16_dynamicLink">
+                  </a> <!-- TC16_dynamicLink -->
+                  <span class="method-name">TC16_dynamicLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC17_createdLink">
+                  </a> <!-- TC17_createdLink -->
+                  <span class="method-name">TC17_createdLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC18_noContentLink">
+                  </a> <!-- TC18_noContentLink -->
+                  <span class="method-name">TC18_noContentLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC19_movedLink">
+                  </a> <!-- TC19_movedLink -->
+                  <span class="method-name">TC19_movedLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC20_badRequest">
+                  </a> <!-- TC20_badRequest -->
+                  <span class="method-name">TC20_badRequest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DemoQA_Suite-class-passed -->
+        </div> <!-- panel DemoQA_Suite -->
+        <div panel-name="test-xml-DemoQA_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Anand_Mopidi\eclipse-workspace\Demoqa.com\testing.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;DemoQA Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utils.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;All Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.DemoQATest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- All Tests --&gt;
+&lt;/suite&gt; &lt;!-- DemoQA Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-DemoQA_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for DemoQA Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">All Tests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-DemoQA_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for DemoQA Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-DemoQA_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for DemoQA Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_DemoQA_Suite');
+function tableData_DemoQA_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TC04_selectDocuments')
+data.setCell(0, 2, 'tests.DemoQATest')
+data.setCell(0, 3, 16300);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC03_openCheckBox')
+data.setCell(1, 2, 'tests.DemoQATest')
+data.setCell(1, 3, 16224);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC02_fillTextBox')
+data.setCell(2, 2, 'tests.DemoQATest')
+data.setCell(2, 3, 2923);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC18_noContentLink')
+data.setCell(3, 2, 'tests.DemoQATest')
+data.setCell(3, 3, 2753);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC19_movedLink')
+data.setCell(4, 2, 'tests.DemoQATest')
+data.setCell(4, 3, 2716);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC17_createdLink')
+data.setCell(5, 2, 'tests.DemoQATest')
+data.setCell(5, 3, 2703);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC20_badRequest')
+data.setCell(6, 2, 'tests.DemoQATest')
+data.setCell(6, 3, 2671);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC16_dynamicLink')
+data.setCell(7, 2, 'tests.DemoQATest')
+data.setCell(7, 3, 2614);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC14_openLinks')
+data.setCell(8, 2, 'tests.DemoQATest')
+data.setCell(8, 3, 2446);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TC06_openWebTable')
+data.setCell(9, 2, 'tests.DemoQATest')
+data.setCell(9, 3, 2434);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TC15_simpleLink')
+data.setCell(10, 2, 'tests.DemoQATest')
+data.setCell(10, 3, 2396);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'TC09_deleteUser')
+data.setCell(11, 2, 'tests.DemoQATest')
+data.setCell(11, 3, 2229);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'TC07_addUser')
+data.setCell(12, 2, 'tests.DemoQATest')
+data.setCell(12, 3, 2109);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'TC08_searchUser')
+data.setCell(13, 2, 'tests.DemoQATest')
+data.setCell(13, 3, 2001);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'TC10_openButtons')
+data.setCell(14, 2, 'tests.DemoQATest')
+data.setCell(14, 3, 1455);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'TC11_doubleClick')
+data.setCell(15, 2, 'tests.DemoQATest')
+data.setCell(15, 3, 1408);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'TC13_singleClick')
+data.setCell(16, 2, 'tests.DemoQATest')
+data.setCell(16, 3, 1399);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'TC12_rightClick')
+data.setCell(17, 2, 'tests.DemoQATest')
+data.setCell(17, 3, 1358);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'TC05_radioButtonYes')
+data.setCell(18, 2, 'tests.DemoQATest')
+data.setCell(18, 3, 1221);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'TC01_openElements')
+data.setCell(19, 2, 'tests.DemoQATest')
+data.setCell(19, 3, 1126);
+window.suiteTableData['DemoQA_Suite']= { tableData: data, tableDiv: 'times-div-DemoQA_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-DemoQA_Suite">
+              </div> <!-- times-div-DemoQA_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-DemoQA_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for DemoQA Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-DemoQA_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-DemoQA_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DemoQATest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC01_openElements</span>
+                <span class="method-start">5935 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC02_fillTextBox</span>
+                <span class="method-start">7071 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC03_openCheckBox</span>
+                <span class="method-start">10004 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC04_selectDocuments</span>
+                <span class="method-start">26461 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC05_radioButtonYes</span>
+                <span class="method-start">42931 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC06_openWebTable</span>
+                <span class="method-start">44159 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC07_addUser</span>
+                <span class="method-start">46596 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC08_searchUser</span>
+                <span class="method-start">48710 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC09_deleteUser</span>
+                <span class="method-start">50711 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC10_openButtons</span>
+                <span class="method-start">53105 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC11_doubleClick</span>
+                <span class="method-start">54560 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC12_rightClick</span>
+                <span class="method-start">55968 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC13_singleClick</span>
+                <span class="method-start">57337 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC14_openLinks</span>
+                <span class="method-start">58743 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC15_simpleLink</span>
+                <span class="method-start">61193 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC16_dynamicLink</span>
+                <span class="method-start">63592 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC17_createdLink</span>
+                <span class="method-start">66206 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC18_noContentLink</span>
+                <span class="method-start">68915 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC19_movedLink</span>
+                <span class="method-start">71676 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC20_badRequest</span>
+                <span class="method-start">74399 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">77077 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
