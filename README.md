@@ -50,7 +50,7 @@ Demo-QASite-Framework
 ▶️ How to Run Tests
 
 1. Clone the repository:
-git clone <your-repo-url>
+git clone <https://github.com/anandmopidi-hub/Demo-QASite-Framework>
 
 2. Navigate to project folder:
 cd Demo-QASite-Framework
